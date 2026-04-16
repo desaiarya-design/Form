@@ -15,3 +15,9 @@ function data() {
     alert("Response Recorded")
     return true;
 }
+
+
+fetch('http://localhost:3000/api/notes ')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));
